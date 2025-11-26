@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #0b0c10;      /* negro azulado */
+    color: #d6ab6c;                 /* dorado */
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #1f2833;      /* azul oscuro */
+    padding: 30px;
+    border-bottom: 3px solid #d6ab6c;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #d6ab6c;
+}
+
+h3 {
+    margin: 5px 0 0 0;
+    font-weight: 300;
+    color: #c59b5b;
+}
+
+/* TÍTULOS */
+h2 {
+    margin-top: 40px;
+    color: #d6ab6c;
+    font-size: 32px;
+    border-bottom: 2px solid #d6ab6c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* GALERÍA */
+.contenedor-fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.foto {
+    width: 300px;
+    background-color: #1f2833;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d6ab6c;
+    box-shadow: 0 0 10px #000;
+}
+
+/* IMÁGENES */
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;  /* tú pones las imágenes */
+    border-radius: 8px;
+    border: 2px solid #d6ab6c;
+}
+
+/* DESCRIPCIÓN */
+.foto p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e5c99b;
+}
+
+/* BOTÓN */
+.boton {
+    display: inline-block;
+    background-color: #0b0c10;
+    color: #d6ab6c;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid #d6ab6c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #d6ab6c;
+    color: #0b0c10;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Menú Restaurante</title>
+<link rel="stylesheet" href="comidas.css">
+</head>
+<body>  
+    <div class="encabezado"><!--Aqui puse el mismo encabezado que la principal-->
+        <div class="logo"></div><!--El mismo logo igual-->
+        <div class="nombre_restaurante"><h1>Restuaranate Fuego & Brasa</h1></div><!--Div que contiene el nombre del restaurante con un h1 -->
+    </div>
+
+<div class="menu"><!--Aqui para mejor distribucion cree un div menu que contiene todo el menu-->
+
+    <!-- Aqui se definen los platillos de entrada-->
+    <div class="tabla"><!--Creo una div que contiene toda la tabla y clase tabla que compartira con las demas -->
+        <div class="tabla-imagen"><!--Aqui creo div que contendra la imagen de relacionada a la tabal-->
+            <img src="entradas.jpg" alt=""><!--Direccion de la imagen-->
+        </div>
+
+        <div class="tabla-info"><!--Aqui creo div que tendra la tabla de de los nombres de los paltillos con los precios-->
+            <h2 class="subtitulo">ENTRADAS</h2><!--Utilizo un h2 para el encabezado de la tabal-->
+
+            <table><!--Creo la tabla con los diferentes platos de entrada-->
+                <tr><td>Pan artesano con ajo</td> <td class="precio">5€</td></tr>
+                <tr><td>Empanadas crujientes</td> <td class="precio">7€</td></tr>
+                <tr><td>Deditos de queso</td> <td class="precio">6€</td></tr>
+                <tr><td>Sopa de tortilla</td> <td class="precio">8€</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Aqui se definene los platos fuertes-->
+    <div class="tabla"><!--Es el mismo formato que el anterior-->
+        <div class="tabla-imagen">
+            <img src="fuerte.webp" alt="">
+        </div>
+
+        <div class="tabla-info">
+            <h2 class="subtitulo">PLATO FUERTE</h2>
+
+            <table>
+                <tr><td>Carne asada</td> <td class="precio">15€</td></tr>
+                <tr><td>Pasta Alfredo</td> <td class="precio">12€</td></tr>
+                <tr><td>Pechuga rellena</td> <td class="precio">14€</td></tr>
+                <tr><td>Salmón a la plancha</td> <td class="precio">18€</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Mismo formato solo que aqui se definen los postres-->
+    <div class="tabla">
+        <div class="tabla-imagen">
+            <img src="postres.png" alt="">
+        </div>
+
+        <div class="tabla-info">
+            <h2 class="subtitulo">POSTRES</h2>
+
+            <table>
+                <tr><td>Pastel de chocolate</td> <td class="precio">7€</td></tr>
+                <tr><td>Flan casero</td> <td class="precio">6€</td></tr>
+                <tr><td>Pay de limón</td> <td class="precio">7€</td></tr>
+                <tr><td>Brownie caliente</td> <td class="precio">8€</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Igual solo que aqui se definen las ensalada-->
+    <div class="tabla">
+        <div class="tabla-imagen">
+            <img src="ensaladas.webp" alt="">
+        </div>
+
+        <div class="tabla-info">
+            <h2 class="subtitulo">ENSALADAS</h2>
+
+            <table>
+                <tr><td>Ensalada César</td> <td class="precio">9€</td></tr>
+                <tr><td>Ensalada Mediterránea</td> <td class="precio">10€</td></tr>
+                <tr><td>Ensalada mixta</td> <td class="precio">8€</td></tr>
+                <tr><td>Ensalada verde</td> <td class="precio">7€</td></tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="volver"><!--Aca cree div que tiene clase de volver, ya que es el boton que te hara volver a la pagina principal-->
+    <a class="boton-volver" href="index.html">⬅ Volver</a><!--Pongo el enlace que te enlaza con el idex para volver a la pagina principal-->
+</div>
+
+</body>
+</html>
+

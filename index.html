@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"><!--Enlace con la hoja de estilos-->
+    <link rel="icon" href="logo.png" type="image/png"><!--Icono de la pestaña de la pagina-->
+
+    <title>Fuego & Brasa</title><!--Titulo de la pagina que va en la pestaña-->
+</head>
+<body>
+     
+    <div class="encabezado"><!--Creo una div en donde ira el encabezado-->
+        <div class="logo"></div><!--Creo otra div dentro de esta para incluir el logo en el encabezado-->
+        <div class="nombre_restaurante"><h1>Restuaranate Fuego & Brasa</h1></div> <!--Nombre del restraurante en el logo-->
+    </div>
+
+    <div class="encabezado_menu"><a href="menu_comidas.html">Menu Comidas</a></div><!--creo varias div donde con la misma clase donde iran los enlaces para ver los menus proociones etc-->
+    <div class="encabezado_menu"><a href="menu_bebidas.html">Menu Bebidas</a></div>
+    <div class="encabezado_menu"><a href="promociones.html">Promociones</a></div>
+    <div class="encabezado_menu"><a href="galeria.html">Galeria</a></div>
+    <div class="form"><!--Creo un form donde el usuario metera sus datos para que pueda reversar -->
+    <form >
+        <h2>Reserva Ahora</h2><!--Utilizo un encabezado para el titulo del form-->
+        <div class="input"><!--Les asigno la misma clase a los div del los input para que tengan el mismo formato-->
+            <label for="nombre" >Nombre completo</label><!--Con el for los enlazo al input para que si el usario hace click este los mande al input-->
+            <input type="text" placeholder="Flavio Ruiz" id="nombre"><!--Les pongo un placeholder para que lo tome de ejemplo-->
+        </div>
+        
+        <div class="input"><!--Hago los mismo con el resto de ellos-->
+            <label for="email">Emal</label>
+            <input type="email" placeholder="ejemplo@gmail.com" id="email">
+        </div>
+        <div class="input">
+            <label for="fecha" > Fecha</label>
+            <input type="date" id="fecha">
+        </div>
+        <div class="input">
+            <input type="submit" >
+        </div>
+
+        
+    </form></div>
+
+    <div class="espacio"></div><!--Aca cree una div para crear espacio ya que no hallaba otra forma -->
+
+    <div class="pie_pagina"><!--Esta solo es una div para el pie de pagina donde pondre mis datos-->
+        <p>Alumno: Gustavo Adolfo Henrnadez Ruiz             Materia: Programacion Web</p>
+    </div>
+
+</body>
+</html>

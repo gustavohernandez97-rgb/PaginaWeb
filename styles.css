@@ -1,0 +1,194 @@
+/*Al body le asigno la tipografia sans serif, un tamaño de 12 y los colores los selecciono por el sistema de color hexadecimal*/
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color:  #d6ab6c;
+    background-color: #14151a;
+    
+
+}
+/*En el encabezado le pongo un ancho del tamaño de l viewport y una latura de 100 pixeles
+redondeo los bordes y pongo un degradao con la funcion radial-gradiant, y un margin de 30px 
+arirba y abajo*/
+.encabezado {
+    width: 100%;
+    height: 100px;
+    background-color: #2B3B4C;
+    box-sizing: border-box;
+    display: flex; /*Para alinear los elementos que estan dentro del div*/
+    border-radius: 20px;
+    background: radial-gradient(circle, #14151a ,#1A1D26 );
+    margin: 30px 0;
+    
+}
+/*Esta el div del nombre del restuarante, pongo un ancho de 400px y utilizo border box para que con el margin 
+no se salga del div padre*/
+.nombre_restaurante {
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+}
+/*Este es texto del nombre del restaurante y solo pongo tipografia sans serif, le pongo font-weight 100 para 
+que la letra se haga finita, margin auto para que se centre, pading de 10 y posistion relative para que se mueva dentro
+de las dimensiones de div padre*/
+h1{
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    margin: auto;
+    padding: 10% 10px;
+    color:#d6ab6c;
+    position: relative;
+}
+/**/
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("logo.png");
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0 0 10px 5px #a99494;
+    position:relative;
+
+
+}
+/*Este era por que queria incluir un fondo de casi todo el cuerpo pero no logre que se pusiera al fondo 
+de las div que contienen los enlaces*/
+/*.fondo {
+    
+    background-image:url("fondo.webp");
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 350px;
+    top:10px;
+    left:5%;
+    margin:auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px #232935;
+    z-index: 1;
+}*/
+/*Este el div que habia puesto para hacer espacio, solo es para eso por esos sus dimensiones */
+.espacio{
+    width: 80%;
+    height: 300px;
+    position: absolute;
+
+}
+/*esta es las clase de los div que contienen los enlaces que te envian a lo smenus etc, solo redini dimensiones, tambien utilice border box 
+para que lo mencione anteriormente, aliene los items,utilice dysplay que define como se comporta un elemento si en fila o en bloque com flex se centra
+y se ocmporta en fila*/
+.encabezado_menu {
+    background-color: #211d3d23;
+    box-sizing: border-box;
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px 30px;
+    top:100px;
+    margin-top: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+/*es la clase del div que contiene el formulario le di las mismas propiedades que el menu encabezado */
+.form{
+    background-color: #211d3d23;
+    box-sizing: border-box;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px 30px;
+    top:100px;
+    margin-top: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*solo defini el tamaño y fotn weight del h2*/
+h2 {
+    margin:auto;
+    padding: 10px 10px;
+    font-weight: 100;
+    position: relative;
+    
+}
+/*es el div del pie de pagina donde estan mis datos centre el texto y le di 0px abajo para que se manetenga ahi
+y con position fixed hago que no se mueva ni con el scroll */
+.pie_pagina {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;      /* pegado a abajo */
+    left: 0;        /* inicia desde la izquierda */
+    width: 100%;    /* ocupa todo el ancho */
+    background: #1A1D26;
+    padding: 15px;
+    text-align: center;
+
+}
+/*en el form solo le di una sombra con box shadow y redondee los bordes */
+form {
+    background-color: #986c2a;
+    padding: 20px 0;
+    max-width: 550px;
+    margin:auto;
+    box-shadow: 0px 0px 20px rgb(124, 127, 138);
+    margin-top: 20px;
+    top:900px;
+    border-radius: 20px;
+}
+/*en los div que contienen los input solo le di un padding para que se separen entre si */
+.input {
+    padding: 6px 10px;
+
+}
+/*a los input les di el ancho de 100% que es el de su padre, igual utilice border box, puse borer none para que no tenga bordes
+para solo poner un borde del lado iquierdo, y redondee los bordes*/
+input {
+    width:100%;
+    box-sizing: border-box;
+    padding: 6px 6px;
+    border:none;
+    border-left: 3px solid rgb(38, 28, 83);;
+    box-shadow: 0px 0px 45px #000a;
+    color: #9CA0A6;
+    border-radius: 5px;
+    background-color: #222;
+}
+/*Con estas etiquetas puse un nombre a que se debe de hacer en cada campo*/
+label{
+    font-size: .88 em;
+    line-height: 2;
+}
+/*simplemente le di interlineado y con pre-wrap lee los espacios ya que sin esta aunque pongas muchos espacios solo lee uno */
+p {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    white-space: pre-wrap;
+
+}
+/*le volvi a dar formato a lso link, con etxt decoration les quite el subrayado, y ya,*/
+a {
+    margin:auto;
+    padding: 10px 10px;
+    font-weight: 100;
+    position: relative;
+    font-family: sans-serif;
+    color: #d6ab6c;
+    text-decoration: none;
+    font-size: 18px;
+
+}

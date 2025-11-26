@@ -1,0 +1,168 @@
+/*En el body defini un fondo oscuro, tipografía Arial, y elimino márgenes para que ocupe todo el viewport*/
+body {
+    background-color: #14151a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/*El encabezado es igual que en las demás páginas: fondo con gradiente, estilo oscuro y centrado*/
+.encabezado {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(circle, #14151a ,#1A1D26);
+    display: flex;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+/*Este es el logo, mismo formato que en todas las páginas*/
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("logo.png");
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0 0 10px 5px #2B3B4C;
+    position: relative;
+}
+
+/*Contenedor del nombre del restaurante, igual que los otros*/
+.nombre_restaurante {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Estilo del h1 para mostrar el nombre del restaurante*/
+h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    padding: 30px 10px;
+    color: #d6ab6c;
+    margin: 0;
+}
+
+
+/*Contenedor principal del menú, para centrar y dar margen inferior*/
+.menu {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+
+/*Cada tabla usa un contenedor flexible con fondo oscuro y borde redondeado*/
+.tabla {
+    display: flex;
+    background: #1A1D26;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #000a;
+    border: 1px solid #2B3B4C;
+}
+
+
+/*La parte izquierda donde va la imagen*/
+.tabla-imagen {
+    width: 40%;
+    background-color: #232935; /*Color de respaldo si la imagen no carga*/
+}
+
+/*Imagen ajustada a todo el contenedor usando object-fit*/
+.tabla-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 2px solid #d6ab6c; /*Línea decorativa dorada*/
+}
+
+
+/*La parte derecha donde va la tabla con los precios*/
+.tabla-info {
+    width: 60%;
+    padding: 20px;
+    color: #d6ab6c;
+}
+
+
+/*Subtítulos de las categorías del menú, con fondo azul oscuro y sombra*/
+.subtitulo {
+    background-color: #2B3B4C;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #d6ab6c;
+    font-weight: 100;
+    font-size: 18px;
+    box-shadow: 0 0 10px #0006;
+}
+
+
+/*Estilo general de las tablas internas*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*Celdas del nombre del producto y precio*/
+td {
+    padding: 10px 0;
+    color: #d6ab6c;
+    font-size: 14px;
+}
+
+
+/*Clase precio, alineación derecha y dorado más claro*/
+.precio {
+    text-align: right;
+    font-weight: bold;
+    color: #e6c995;
+}
+
+
+/*Contenedor del botón de volver, centrado*/
+.volver-contenedor {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/*Botón para regresar con mismo estilo azul y dorado*/
+.btn-volver {
+    background-color: #2B3B4C;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #d6ab6c;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000a;
+    transition: .3s;
+}
+
+/*Efecto hover para el botón*/
+.btn-volver:hover {
+    background-color: #3c4f63;
+    box-shadow: 0 0 15px #d6ab6c;
+}
+
+/*Botón usado para volver, idéntico al anterior*/
+.boton {
+    background-color: #2B3B4C;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #d6ab6c;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000a;
+    transition: .3s;
+}
+
+.boton:hover {
+    background-color: #3c4f63;
+    box-shadow: 0 0 15px #d6ab6c;
+}

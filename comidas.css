@@ -1,0 +1,160 @@
+/*Al body le asigno un color de fondo oscuro, defino la tipografía Arial,
+quito los márgenes por defecto y agrego un padding general*/
+body {
+    background-color: #14151a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/*El encabezado ocupa todo el ancho, tiene altura fija, bordes redondeados,
+un degradado radial y display:flex para alinear logo y nombre del restaurante*/
+.encabezado {
+    width: 100%;
+    height: 100px;
+    background-color: #2B3B4C;
+    box-sizing: border-box;
+    display: flex; 
+    border-radius: 20px;
+    background: radial-gradient(circle, #14151a ,#1A1D26 );
+    margin: 30px 0;
+}
+
+/*Este div contiene el nombre del restaurante.
+Tiene ancho fijo y margin:auto para centrarse dentro del encabezado*/
+.nombre_restaurante {
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+}
+
+/*Aquí doy estilo al texto del nombre: tipografía fina, centrado y color dorado*/
+h1{
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    margin: auto;
+    padding: 10% 10px;
+    color:#d6ab6c;
+    position: relative;
+}
+
+/*Este div es el logo, uso background-image para colocar la imagen,
+cover para escalar correctamente, redondeo y sombra externa*/
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("logo.png");
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0 0 10px 5px #a99494;
+    position:relative;
+}
+
+
+/*Este contenedor envuelve todas las tablas del menú,
+le doy un ancho máximo y lo centro con margin:auto*/
+.menu {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 80px; /* espacio antes del pie de página */
+}
+
+/*Cada tabla del menú está dentro de un cuadro con fondo oscuro,
+bordes curveados, sombra y display:flex para dividir imagen e información*/
+.tabla {
+    display: flex;
+    background: #1A1D26; /* mismo fondo usado en tu estilo */
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #000a; /* sombra fría */
+    border: 1px solid #232935; /* borde tenue */
+}
+
+
+/*Div que contiene la imagen; le doy ancho fijo y color de fondo
+por si la imagen no carga*/
+.tabla-imagen {
+    width: 40%;
+    background-color: #232935; /* color placeholder si no hay imagen */
+}
+
+/*Estilo de la imagen: cubre todo el contenedor y coloco
+una línea dorada a la derecha para separar elementos*/
+.tabla-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 2px solid #986c2a; /* línea dorada */
+}
+
+
+/*Este div contiene el título y los platos; uso padding y color dorado*/
+.tabla-info {
+    width: 60%;
+    padding: 20px;
+    color: #d6ab6c; /* tu color dorado */
+}
+
+/*Diseño del título de cada sección del menú: fondo azul oscuro,
+bordes redondeados y sombra suave*/
+.subtitulo {
+    background-color: #2B3B4C;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #d6ab6c;
+    font-weight: 100;
+    font-size: 18px;
+    box-shadow: 0 0 10px #0006;
+}
+
+
+
+/*Quito bordes entre celdas y hago que ocupe todo el ancho*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*A los elementos de la tabla les doy espaciado y el color dorado*/
+td {
+    padding: 10px 0;
+    color: #d6ab6c;
+    font-size: 14px;
+}
+
+/*Alineo el precio a la derecha y uso un dorado más claro*/
+.precio {
+    text-align: right;
+    font-weight: bold;
+    color: #e0bf86; 
+}
+/*Contenedor del botón para regresar; solo centro y doy margen*/
+.volver{
+    text-align: center;
+    margin: 40px 0;
+}
+
+/*Estilo del botón para volver: fondo dorado oscuro, borde redondeado
+y efecto hover con cambio de tono*/
+.boton-volver {
+    background-color: #986c2a;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #d6ab6c;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000a;
+    transition: .3s;
+}
+
+/*Efecto que al pasar el mause se vea mas claro y con mas btillo*/
+.boton-volver:hover {
+    background-color: #b38133;
+    box-shadow: 0 0 15px #d6ab6c;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Menú de Bebidas</title>
+<link rel="stylesheet" href="bebidas.css"><!--Aqui enlazo el archivo css donde va todo el estilo-->
+</head>
+
+<body>  
+    <!--Encabezado igual que las otras páginas-->
+    <div class="encabezado"><!--Div principal del encabezado-->
+        <div class="logo"></div><!--Div donde irá el logo del restaurante-->
+        <div class="nombre_restaurante"><h1>Restaurante Fuego & Brasa</h1></div><!--Div que contiene el nombre del restaurante en un h1-->
+    </div>
+
+<div class="menu"><!--Contenedor general que guarda todas las tablas del menú-->
+
+    <!-- Aqui van las cervezas-->
+    <div class="tabla"><!--Cada seccion cervezas, cocteles, etc. va dentro de un div con clase tabla-->
+        <div class="tabla-imagen"><!--Div que contiene la imagen asociada a la categoria-->
+            <img src="cervezas.webp" alt="Espacio para imagen"><!--Aqui va la dirección de la imagen-->
+        </div>
+
+        <div class="tabla-info"><!--Div donde va el titulo y la tabla con los precios-->
+            <h2 class="subtitulo">CERVEZAS</h2><!--Título de la categoria usando h2-->
+
+            <table><!--Tabla con los nombres de las bebidas y sus precios-->
+                <tr><td>Bohemia</td> <td class="precio">$110</td></tr>
+                <tr><td>Carta Blanca</td> <td class="precio">$75</td></tr>
+                <tr><td>Corona</td> <td class="precio">$110</td></tr>
+                <tr><td>Modelo Especial</td> <td class="precio">$150</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Aqui esta la seccion de cocteles-->
+    <div class="tabla"><!--Misma estructura que la tabla anterior-->
+        <div class="tabla-imagen">
+            <img src="cocteles.webp" alt="Espacio para imagen"><!--Imagen representativa de la categoría-->
+        </div>
+
+        <div class="tabla-info"><!--Aqui va el título y la tabla de precios-->
+            <h2 class="subtitulo">CÓCTELES</h2>
+
+            <table>
+                <tr><td>Margarita</td> <td class="precio">$110</td></tr>
+                <tr><td>Negroni</td> <td class="precio">$75</td></tr>
+                <tr><td>Mojito</td> <td class="precio">$100</td></tr>
+                <tr><td>Old Fashioned</td> <td class="precio">$110</td></tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Cree un div le el style aqui por que el css me aparecia diferente y lo tuve que poner aqui, el alinear texto y el margen 
+ luego tengo clase boton para darle stilo en css y el link que regresa al index -->
+<div style="text-align:center; margin-top:30px;"><!--Div para centrar el botón de volver-->
+    <a class="boton" href="index.html">Volver a la página principal</a><!--Enlace para regresar al index-->
+</div>
+
+</body>
+</html>
